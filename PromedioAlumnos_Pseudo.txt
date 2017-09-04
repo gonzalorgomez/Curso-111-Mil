@@ -1,0 +1,17 @@
+2. Pseudocodigo.
+
+INICIO pocentajeAprobados;
+	entero alumnosAprobados, totalAlumnos;
+flotante porcentaje=0;
+		
+	IMPRIMIR "Cantidad de alumnos aprobados: " ;
+TOMAR aprobados;
+alumnosAprobados = aprobados;
+	IMPRIMIR "Cantidad total de alumnos: " ;
+TOMAR total;
+totalAlumnos = total;	
+			
+	porcentaje = (alumnosAprobados/totalAlumnos) * 100;
+	
+	IMPRIMIR"El porcentaje de alumnos aprobados es: " +porcentaje;
+FIN
