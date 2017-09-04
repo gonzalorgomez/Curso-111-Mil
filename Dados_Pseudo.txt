@@ -1,7 +1,7 @@
 INICIO caraOpuestaDados;
-	entero cara;
-	caracter respuesta;
-	cadena CaraOpuesta[10];
+	ENTERO cara;
+	TEXTO respuesta;
+	TEXTO CaraOpuesta[10];
 	
 	IMPRIMIR "Quiere ingresar un numero?(S/N): ";
 	TOMAR Y ASIGNAR respuesta;

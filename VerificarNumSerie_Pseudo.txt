@@ -1,29 +1,25 @@
 INICIO numeroDeSerie;
-	entero numeroSerie;
-	caracter respuesta;
+	ENTERO numeroSerie;
+	ENTERO respuesta;
 	
 	IMPRIMIR “Desea verificar un numero de serie? (S/N): " ;
-TOMAR letraIngresada;
-respuesta = letraIngresada;
+	TOMAR Y ASIGNAR respuesta.
 	
 	MIENTRAS (respuesta == 'S') O (respuesta == 's') HACER
-	IMPRIMIR " Ingrese numero de serie: " ;
-TOMAR numeroIngresado;
-	numeroSerie = numeroIngresado;
+		IMPRIMIR " Ingrese numero de serie: " ;
+		TOMAR Y ASIGNAR numeroSerie;
 
-	SI (numeroSerie >= 1468) Y (numeroSerie <=1568) ENTONCES
-		IMPRIMIR " El producto es defectuoso.” ;
-	SINO
-		SI (numeroSerie >= 8888) Y (numeroSerie <= 11111)	
-			IMPRIMIR " El producto es defectuoso.";
+		SI (numeroSerie >= 1468) Y (numeroSerie <=1568) ENTONCES
+			IMPRIMIR " El producto es defectuoso.” ;
 		SINO
-			IMPRIMIR " El producto no es defectuoso." ;
+			SI (numeroSerie >= 8888) Y (numeroSerie <= 11111)	
+				IMPRIMIR " El producto es defectuoso.";
+			SINO
+				IMPRIMIR " El producto no es defectuoso." ;
+			FIN-SI
 		FIN-SI
-	FIN-SI
 
-	IMPRIMIR “Desea verificar otro numero de serie? (S/N): ";
-	TOMAR letraIngresada;
-respuesta = letraIngresada;
-
-FIN-MIENTRAS
+		IMPRIMIR “Desea verificar otro numero de serie? (S/N): ";
+		TOMAR Y ASIGNAR respuesta;
+	FIN-MIENTRAS
 FIN
